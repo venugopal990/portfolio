@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venu Gopal Rao Dummu - Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #0A2647;
+      background-color: #FFFFFF;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0A2647;
+    }
+
+    a:hover {
+      color: #FFD700;
+    }
+
+    /* Header */
+    header {
+      background-color: #0A2647;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+
+    header a {
+      color: #FFD700;
+    }
+
+    /* Profile Image */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+      border: 4px solid #FFD700;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #FFD700;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* About Me */
+    #about {
+      background-color: #F5F5F5;
+    }
+
+    #about p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+	/* Skills Section */
+	#skills {
+	  background-color: #F5F5F5;
+	  padding: 40px 20px;
+	}
+
+	.skills-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  gap: 20px;
+	  justify-content: center;
+	}
+
+	.skill-category {
+	  background-color: #FFFFFF;
+	  padding: 20px;
+	  border-radius: 10px;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  width: 300px;
+	}
+
+	.skill-category h3 {
+	  margin-top: 0;
+	  font-size: 1.5rem;
+	  color: #0A2647;
+	  border-bottom: 2px solid #FFD700;
+	  padding-bottom: 10px;
+	}
+
+	.skill-card {
+	  background-color: #0A2647;
+	  color: #FFFFFF;
+	  padding: 10px;
+	  margin: 10px 0;
+	  border-radius: 5px;
+	  text-align: center;
+	  font-size: 0.9rem;
+	}
+
+    /* Work Experience */
+    .experience-card {
+      background-color: #F5F5F5;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .experience-card h3 {
+      margin: 0;
+    }
+
+    .experience-card p {
+      margin: 10px 0;
+    }
+
+    /* Projects */
+    #projects {
+      background-color: #F5F5F5;
+    }
+
+    .project-card {
+      background-color: #FFFFFF;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+      margin: 0;
+    }
+
+    .project-card p {
+      margin: 10px 0;
+    }
+
+    .project-card a {
+      color: #0A2647;
+      font-weight: bold;
+    }
+
+    .project-card a:hover {
+      color: #FFD700;
+    }
+
+    /* Awards and Certificates */
+    #awards {
+      background-color: #FFFFFF;
+    }
+
+    .awards-list {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .awards-list li {
+      margin: 10px 0;
+    }
+
+    /* Contact */
+    #contact {
+      text-align: center;
+    }
+
+    #contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    #contact input, #contact textarea {
+      padding: 10px;
+      border: 1px solid #0A2647;
+      border-radius: 5px;
+    }
+
+    #contact button {
+      background-color: #0A2647;
+      color: #FFFFFF;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #contact button:hover {
+      background-color: #FFD700;
+      color: #0A2647;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0A2647;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+
+  
+	<header>
+	  <img src="./profile-pic.png" alt="Venu Gopal Rao Dummu" class="profile-img">
+	  <h1>Venu Gopal Rao Dummu</h1>
+	  <p>Experienced Java Developer | Building Scalable, High-Performance Applications</p>
+	  <p><a href="mailto:Venugopal.edu2023@gmail.com">Venugopal.edu2023@gmail.com</a> | (469) 428-6257</p>
+	  <p>
+		<a href="https://www.linkedin.com/in/venugopal990/" target="_blank">LinkedIn</a> | 
+		<a href="https://github.com/venugopal990/" target="_blank">GitHub</a> |
+		<a href="https://drive.google.com/file/d/1tmeVjkdV71amwwmQbkRcvFXONE0xC3rp/view" download="Venu_Gopal_Rao_Dummu_Resume.pdf">Download Resume</a>
+	  </p>
+	</header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Java Developer with 4+ years of experience in designing and deploying scalable, high-performance applications across banking and healthcare domains. I specialize in microservices architecture, RESTful APIs, and cloud-based solutions. I hold a Master’s degree in Computer and Information Science from Southern Arkansas University and have worked with top organizations like Citi Corp and L-Cube Innovative Solutions.
+    </p>
+  </section>
+
+  <!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <!-- Programming Skills -->
+    <div class="skill-category">
+      <h3>Programming Skills</h3>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">SQL</div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="skill-category">
+      <h3>Frameworks</h3>
+      <div class="skill-card">Spring Boot</div>
+      <div class="skill-card">Spring Cloud</div>
+      <div class="skill-card">JPA</div>
+      <div class="skill-card">JDBC</div>
+      <div class="skill-card">Spring Security</div>
+      <div class="skill-card">Spring AOP</div>
+      <div class="skill-card">Java Server Pages (JSP)</div>
+      <div class="skill-card">Servlets</div>
+    </div>
+
+    <!-- Microservices Architecture -->
+    <div class="skill-category">
+      <h3>Microservices Architecture</h3>
+      <div class="skill-card">API Gateway</div>
+      <div class="skill-card">Config Server</div>
+      <div class="skill-card">Service Discovery</div>
+      <div class="skill-card">Circuit Breaker</div>
+    </div>
+
+    <!-- Design Patterns -->
+    <div class="skill-category">
+      <h3>Design Patterns</h3>
+      <div class="skill-card">Singleton</div>
+      <div class="skill-card">Factory</div>
+      <div class="skill-card">Observer</div>
+      <div class="skill-card">Strategy</div>
+      <div class="skill-card">Builder</div>
+    </div>
+
+    <!-- Principles and Practices -->
+    <div class="skill-category">
+      <h3>Principles and Practices</h3>
+      <div class="skill-card">SOLID Principles</div>
+      <div class="skill-card">Multithreading</div>
+      <div class="skill-card">Java Collections</div>
+    </div>
+
+    <!-- Databases and Web Services -->
+    <div class="skill-category">
+      <h3>Databases and Web Services</h3>
+      <div class="skill-card">PostgreSQL</div>
+      <div class="skill-card">Redis</div>
+      <div class="skill-card">REST APIs</div>
+    </div>
+
+    <!-- Cloud and Messaging -->
+    <div class="skill-category">
+      <h3>Cloud and Messaging</h3>
+      <div class="skill-card">AWS (EC2, ECS, S3, RDS, Route 53, IAM, SES)</div>
+      <div class="skill-card">Kafka</div>
+    </div>
+
+    <!-- Monitoring and Logging -->
+    <div class="skill-category">
+      <h3>Monitoring and Logging</h3>
+      <div class="skill-card">Log4J</div>
+      <div class="skill-card">ELK Stack</div>
+      <div class="skill-card">Prometheus</div>
+      <div class="skill-card">Grafana</div>
+      <div class="skill-card">Actuator</div>
+      <div class="skill-card">Zipkin</div>
+    </div>
+
+    <!-- Build and Deployment -->
+    <div class="skill-category">
+      <h3>Build and Deployment</h3>
+      <div class="skill-card">Maven</div>
+      <div class="skill-card">Jenkins</div>
+      <div class="skill-card">TeamCity</div>
+      <div class="skill-card">Docker</div>
+    </div>
+
+    <!-- Tools and Platforms -->
+    <div class="skill-category">
+      <h3>Tools and Platforms</h3>
+      <div class="skill-card">GitHub</div>
+      <div class="skill-card">Bitbucket</div>
+      <div class="skill-card">IntelliJ IDEA</div>
+      <div class="skill-card">Eclipse</div>
+      <div class="skill-card">Postman</div>
+      <div class="skill-card">Swagger</div>
+      <div class="skill-card">SonarQube</div>
+      <div class="skill-card">Jira</div>
+      <div class="skill-card">JUnit</div>
+      <div class="skill-card">Mockito</div>
+    </div>
+
+    <!-- Platforms -->
+    <div class="skill-category">
+      <h3>Platforms</h3>
+      <div class="skill-card">Linux</div>
+      <div class="skill-card">Windows</div>
+    </div>
+
+    <!-- Other Skills -->
+    <div class="skill-category">
+      <h3>Other Skills</h3>
+      <div class="skill-card">Problem-solving</div>
+      <div class="skill-card">Data Structures</div>
+      <div class="skill-card">Algorithms</div>
+    </div>
+  </div>
+</section>
+
+  <!-- Work Experience -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience-card">
+      <h3>Citi Corp Services India Private Limited (July 2022 – July 2023)</h3>
+      <p><strong>Role:</strong> Java Developer</p>
+      <p><strong>Key Achievements:</strong></p>
+      <ul>
+        <li>Integrated Java-based financial systems using Spring Boot and JPA.</li>
+        <li>Enhanced SQL query performance with Redis caching, reducing data retrieval time by 40%.</li>
+        <li>Automated reporting processes, reducing reporting time by 70%.</li>
+      </ul>
+    </div>
+    <div class="experience-card">
+      <h3>L-Cube Innovative Solutions (June 2019 – June 2022)</h3>
+      <p><strong>Role:</strong> Java Developer</p>
+      <p><strong>Key Achievements:</strong></p>
+      <ul>
+        <li>Built the Glace EMR application using Spring Boot microservices.</li>
+        <li>Migrated legacy systems to Spring Boot, reducing system load times by 50%.</li>
+        <li>Automated pharmacy data synchronization, decreasing manual intervention by 70%.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>E-commerce Microservices</h3>
+      <p>
+        Developed a robust e-commerce platform using Spring Boot microservices and Spring Cloud for enhanced scalability and fault tolerance. Integrated AWS services for deployment and infrastructure management, and implemented Redis for efficient caching, significantly improving system performance.
+      </p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/venugopal990/Multi_Market_Hub" target="_blank">Code and Architecture</a></p>
+      <p><strong>Live:</strong> <a href="https://shopcustomerportal.netlify.app/mcdonald288792" target="_blank">Demo</a></p>
+    </div>
+    <div class="project-card">
+      <h3>Serverless Blog Application</h3>
+      <p>
+        Designed a modern blog application utilizing a serverless architecture with AWS services. The project leverages IAM, AWS Lambda, API Gateway, DynamoDB, S3 for static website hosting, CloudFront CDN, and Route 53 to create a scalable, cost-effective, and user-friendly platform.
+      </p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/venugopal990/AWS-Serverless-Blog-App" target="_blank">Code and Architecture</a></p>
+    </div>
+  </section>
+
+  <!-- Awards and Certificates -->
+  <section id="awards">
+    <h2>Awards and Certificates</h2>
+    <div class="awards-list">
+      <ul>
+        <li>Recognized as the <strong>Best Employee of the Year</strong> for the period 2019-2020.</li>
+        <li>Certified as an <strong>AWS Cloud Practitioner</strong> by Amazon Web Services.</li>
+        <li>Certified as an <strong>Oracle Java Programmer</strong>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+	<section id="contact">
+	  <h2>Contact Me</h2>
+	  <form action="https://formspree.io/f/mvgzkprz" method="POST">
+		<input type="text" name="name" placeholder="Your Name" required>
+		<input type="email" name="email" placeholder="Your Email" required>
+		<input type="text" name="subject" placeholder="Subject" required>
+		<textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+		<input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+		<button type="submit">Send Message</button>
+	  </form>
+	</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Venu Gopal Rao Dummu. All rights reserved.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/venugopal990/" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/venugopal990/" target="_blank">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
